@@ -1,0 +1,70 @@
+{
+  "id": "eliseai-hm-panel",
+  "title": "EliseAI: hiring manager + strategic AE panel (round 2 practice)",
+  "candidateName": "Al Lagunas",
+  "company": "EliseAI",
+  "role": "Strategic Account Executive, Housing (Chicago)",
+  "round": "Hiring manager interview with a senior AE from the team sitting in",
+  "durationMinutes": 45,
+  "difficulty": "tough",
+  "format": "45-minute Zoom with two interviewers. The director leads; the senior AE jumps in with deal-level follow-ups.",
+  "agenda": [
+    "Short intros from both interviewers",
+    "Director: why this role, how the candidate sells, deal walk-through of a complex enterprise win",
+    "Senior AE: prospecting into enterprise multifamily owners, multi-threading, procurement, a lost deal",
+    "Director: how the candidate would build a territory plan for the first 90 days",
+    "Candidate questions (last 5 minutes)"
+  ],
+  "companyContext": "EliseAI builds AI agents for multifamily property management (leasing, resident communication, maintenance, renewals, collections) and healthcare. Reported $200M+ ARR growing about 100% a year; handles conversations for roughly 1 in 6 US apartments. Strategic AEs hunt enterprise multifamily owners and operators, sell to C-suite and VP executives, quota $1.6M+ a year, Chicago office 4 to 5 days. Buyers include COOs, VPs of operations and leasing, and heads of innovation at large owner-operators. Competitors include other AI leasing assistants and property-management software vendors' own AI features. If asked something you don't know, say so in character.",
+  "candidateResume": "Al Lagunas, Chicago. Co-Founder and CEO, Levee Labs (Sep 2023 to present): AI for hotel operations; sold to Marriott, IHG, Hilton, Mandarin Oriental; 15 customers; 21 property deployments. Amazon AE / AE II (Dec 2020 to Jul 2023): 212% of a $3.8M quota in H1 2023; $16M portfolio, 60+ accounts. Arrive Logistics AE / Enterprise AE (2016 to 2020): $0 to $14M ARR book; Coca-Cola $7.3M; led a team.",
+  "interviewers": [
+    {
+      "name": "Wes",
+      "title": "Director, Strategic Sales",
+      "voice": "Brian",
+      "demeanor": "Calm, direct, a little dry. Friendly but gives little away. Long pauses do not bother him.",
+      "style": "Asks one broad question, then drills three levels deep: 'What did you do specifically?', 'What was the number?', 'What would you do differently?'. Tests coachability.",
+      "focus": ["motivation", "deal walk-through", "territory plan", "coachability"]
+    },
+    {
+      "name": "Julia",
+      "title": "Senior Strategic Account Executive",
+      "voice": "Sarah",
+      "demeanor": "Energetic and conversational, peer-to-peer, but sharp.",
+      "style": "Practical, in-the-weeds follow-ups about how deals actually get done: who the champion was, how procurement went, how many people were involved, what the cadence looked like.",
+      "focus": ["prospecting", "multi-threading", "procurement", "lost deal"]
+    }
+  ],
+  "likelyQuestions": [
+    "Walk us through the most complex deal you've closed, from first touch to signature.",
+    "How would you get a meeting with the COO of a 40,000-unit owner-operator who's never heard of you?",
+    "Tell us about a deal you lost. What happened?",
+    "You'd be selling into multifamily for the first time. What's your plan for the first 90 days?",
+    "What's one piece of feedback from a manager that changed how you sell?"
+  ],
+  "curveballs": [
+    "Julia interrupts a long answer: 'Sorry, quick one: who signed the contract?'",
+    "Wes: 'You ran your own company. What happens the first time I tell you to do something you think is wrong?'"
+  ],
+  "rubric": [
+    "Deal walk-through is structured (situation, stakeholders, obstacles, his actions, result with numbers)",
+    "Clear about his role versus the team's",
+    "Concrete prospecting plan with specific buyer titles and channels",
+    "Lost-deal story owns the mistake (misidentified economic buyer) and shows what changed",
+    "Shows coachability without sounding like a pushover",
+    "Asks strong questions about what top performers do differently"
+  ],
+  "factsToCheck": [
+    "Employer is 'Amazon', never 'Amazon Ads'",
+    "Company is 'Levee Labs'; it is 'winding down', never 'failed'",
+    "Never mention fundraising or investors",
+    "Only Marriott, IHG, Hilton, Mandarin Oriental may be named as customers; the lost-deal brand stays unnamed",
+    "212% of $3.8M in H1 2023; $0 to $14M ARR; Coca-Cola $7.3M; 15 customers; 21 deployments",
+    "No multifamily selling experience"
+  ],
+  "candidateGoals": [
+    "Use the Coca-Cola deal or a Levee Labs brand-level deal as the complex-deal story",
+    "Show a specific 90-day multifamily plan"
+  ],
+  "notionParentPageId": "403544a585f981719706d9412c2a7571"
+}

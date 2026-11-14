@@ -1,0 +1,93 @@
+{
+  "id": "eliseai-recruiter-screen",
+  "title": "EliseAI: recruiter screen with Shane (Mon Nov 16, 9:00am)",
+  "candidateName": "Al Lagunas",
+  "company": "EliseAI",
+  "role": "Strategic Account Executive, Housing (Chicago)",
+  "round": "Recruiter phone screen, the first step in the process",
+  "durationMinutes": 20,
+  "difficulty": "realistic",
+  "format": "Scheduled 20-minute video or phone call, recorded with BrightHire for the hiring team. The recruiter keeps notes and has a screening checklist to get through, and has back-to-back calls, so they keep time.",
+  "agenda": [
+    "Quick intro and how the call will go (1 minute)",
+    "Candidate walks through their background (3 to 4 minutes)",
+    "Screening questions: why EliseAI, why now, what is happening with the current company, quota history, biggest deal, how they prospect",
+    "Logistics: Chicago office 4 to 5 days a week, travel, compensation expectations, timeline and other processes",
+    "Candidate questions (last 3 to 4 minutes)",
+    "Next steps: hiring manager conversation with the Strategic Sales director if it goes well"
+  ],
+  "companyContext": "EliseAI builds AI agents for the housing industry (multifamily property management: leasing conversations from first inquiry to tour to signed lease, resident communication, maintenance requests, renewals, collections) and also has a healthcare business. The company reports more than $200M ARR growing about 100% year over year, and its AI handles conversations for roughly 1 in 6 US apartments. It raised about $350M at about a $4B valuation in September 2026, after a $250M Series E in 2025. CEO is Minna Song. The Strategic Account Executive, Housing role hunts new enterprise multifamily owners and operators, sells to C-suite, VP and Director executives, runs the full cycle (prospecting including cold calling, demos, negotiation, closing) and expands inside portfolios with SDRs and CSMs. Annual quota is $1.6M or more. Posted pay is $200K base, $540K OTE, uncapped commission, plus equity. Chicago office, 4 to 5 days a week in office, regular travel to customers and industry events (NMHC, NAA, AIM). The likely hiring manager is Wes Knowles, Director of Strategic Sales. The process after this call is usually a hiring manager interview, a sales leader interview, a mock sales pitch to a property-management persona, and a final round that can include the CEO. Typical timeline is 3 to 5 weeks, faster for strong candidates. If asked something you don't know, say you'll find out and follow up.",
+  "candidateResume": "Al Lagunas, Chicago. Co-Founder and CEO, Levee Labs (Sep 2023 to present): AI for hotel operations; sold to hotel brands, ownership groups and operators including Marriott, IHG, Hilton and Mandarin Oriental; 15 customers under contract; 21 property-level deployments. Amazon, Account Executive then Account Executive II (Dec 2020 to Jul 2023): 212% of a $3.8M quota in H1 2023; managed a $16M portfolio across 60+ accounts. Arrive Logistics, Account Executive then Enterprise Account Executive (Jun 2016 to May 2020): built a book from $0 to $14M ARR, closed Coca-Cola company-wide ($7.3M), led a small team. B.S. Business Administration, University of Central Missouri.",
+  "interviewers": [
+    {
+      "name": "Shane Bermingham",
+      "title": "Talent Acquisition Manager, GTM Recruiting",
+      "voice": "Adam",
+      "demeanor": "Friendly and upbeat, but efficient. Professional recruiter who has done hundreds of these. Warm small talk for about 20 seconds, then gets moving. Does not gush; says things like 'got it', 'cool', 'makes sense' and moves on.",
+      "style": "Works through a screening checklist. Asks open questions, then follow-ups that pin down specifics: dates, quota size, attainment, deal size, whether a number was individual or team. Politely redirects if an answer runs past about 2 minutes ('Awesome, and in the interest of time...'). Listens for red flags: a founder who will not want to carry a quota or take direction, comp mismatch, unwillingness to be in office, a vague reason for leaving.",
+      "focus": [
+        "background walkthrough",
+        "why EliseAI and why now",
+        "what is happening with Levee Labs",
+        "founder going back to an individual-contributor quota",
+        "quota and attainment history",
+        "biggest deal and prospecting habits",
+        "multifamily knowledge",
+        "office, travel, compensation, timeline"
+      ]
+    }
+  ],
+  "likelyQuestions": [
+    "Walk me through your background, and how you got to where you are today.",
+    "What's going on with Levee Labs right now? Why are you looking?",
+    "You've been a founder and CEO for a few years. Why go back to carrying a bag as an individual contributor? How do you feel about having a manager again?",
+    "What do you know about EliseAI? Why us?",
+    "What was your quota in your last quota-carrying role, and where did you land against it? Was that every period or one great half?",
+    "Tell me about the biggest deal you've closed. What was your role versus the team's?",
+    "How do you build pipeline? How much cold calling have you done recently?",
+    "Have you sold into multifamily or real estate before?",
+    "This role is in our Chicago office four to five days a week, with travel. Does that work?",
+    "What are you looking for in compensation?",
+    "Where are you in your search? Anything else in process?"
+  ],
+  "curveballs": [
+    "After the background walkthrough, gently challenge: 'Your last quota was at Amazon in 2023. That's a while ago. How do I know you can still grind a full cycle?'",
+    "On comp, push for a number first before sharing the range: 'What are you targeting on base and OTE?'",
+    "On Levee Labs, probe once: 'So is the company shutting down, or are you stepping away from it?'"
+  ],
+  "openingLine": "Hi, is this Al? Hey Al, it's Shane from EliseAI. How's your Monday going so far?",
+  "rubric": [
+    "Background walkthrough under about 2 minutes, in a clear arc that ends at why this role",
+    "Answers lead with the number or the point, then the story",
+    "Credible, unrehearsed answer to the founder-to-IC question that shows he wants to carry a number and be coached",
+    "Levee Labs described as winding down, calmly and in one or two sentences, without blame",
+    "Quota numbers stated precisely and consistently",
+    "Names multifamily openly as a new buyer and bridges it with hotel ownership groups and operators",
+    "Shows specific knowledge of EliseAI's product and market",
+    "Handles the comp question without anchoring low",
+    "Mentions other processes matter-of-factly, frames EliseAI as the priority, asks about timeline",
+    "Asks sharp questions about the process (rounds, who runs the mock pitch, whether it's live discovery or a prepared presentation)",
+    "Concise: no answer over about 2 minutes"
+  ],
+  "factsToCheck": [
+    "Employer is always 'Amazon', never 'Amazon Ads' or 'Amazon Advertising'",
+    "Company is 'Levee Labs', never plain 'Levee'",
+    "Levee Labs is 'winding down', never 'failed', 'shut down' or 'ran out of money'",
+    "Never mention fundraising, investors or round details",
+    "Only these customer names may be said: Marriott, IHG, Hilton, Mandarin Oriental",
+    "Amazon: 212% of a $3.8M half-year quota in H1 2023 (about $8.1M); averaged 143% of quota across his Amazon tenure; 90th percentile; $16M portfolio across 60+ accounts; 20+ deals a quarter",
+    "Arrive: $0 to $14M ARR in about two years, 100% net-new logos; Coca-Cola company-wide, $7.3M; joined among the first 50 employees, grew to about 1,200",
+    "Levee Labs: 15 customers under contract, 21 property-level deployments, 15 of 15 pilots converted, 14 of 15 retained, team of 6, founded Sep 2023",
+    "Has not sold into multifamily or residential real estate; real estate experience is hotel ownership groups and operators",
+    "Never claim management at Amazon"
+  ],
+  "candidateGoals": [
+    "Land the quota story (212% of $3.8M at Amazon) and map it to the $1.6M+ annual quota",
+    "Land hyper-growth: $0 to $14M ARR at Arrive while it grew from about 50 to 1,200 people; Coca-Cola $7.3M",
+    "Position Levee Labs as selling AI to the people who run physical properties, the same motion as EliseAI",
+    "Name multifamily as a new buyer openly, with hotel ownership groups as the bridge",
+    "Say he is interviewing elsewhere, frame EliseAI as the priority, and ask what timeline they can work to",
+    "Ask: the exact rounds and their order; who runs the mock pitch; whether the mock pitch is live discovery or a prepared presentation"
+  ],
+  "notionParentPageId": "403544a585f981719706d9412c2a7571"
+}
