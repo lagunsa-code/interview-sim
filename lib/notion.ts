@@ -2,6 +2,8 @@ import type { Debrief } from "./debrief";
 import type { Scenario } from "./types";
 
 const NOTION = "https://api.notion.com/v1";
+// "Mock Interviews" database under Job Search HQ. One row per practice call.
+const MOCK_INTERVIEWS_DB_ID = "418544a585f981139bf2e53438bcf919";
 
 type Block = Record<string, unknown>;
 const rt = (text: string) => [{ type: "text", text: { content: text.slice(0, 1900) } }];
@@ -35,11 +37,16 @@ export async function saveDebriefToNotion(opts: {
   debrief: Debrief;
   transcriptLines: string[];
   conversationId: string;
+  durationSecs?: number;
 }): Promise<string | null> {
-  const { scenario: s, debrief: d, transcriptLines, conversationId } = opts;
-  if (!process.env.NOTION_TOKEN || !s.notionParentPageId) return null;
+  const { scenario: s, debrief: d, transcriptLines, conversationId, durationSecs } = opts;
+  if (!process.env.NOTION_TOKEN) return null;
+  const dbId = process.env.NOTION_MOCK_INTERVIEWS_DB_ID || MOCK_INTERVIEWS_DB_ID;
 
-  const date = new Date().toLocaleString("en-US", { timeZone: "America/Chicago", dateStyle: "medium", timeStyle: "short" });
+  const now = new Date();
+  const date = now.toLocaleString("en-US", { timeZone: "America/Chicago", dateStyle: "medium", timeStyle: "short" });
+  const company = s.title.split(":")[0];
+  const text = (v: string) => ({ rich_text: rt(v) });
   const blocks: Block[] = [
     callout(`${d.score}/10 · ${d.verdict}. ${d.summary}`, "🎯"),
     p(`${s.round} · ${s.interviewers.map((i) => i.name).join(", ")} · ${s.difficulty} · ElevenLabs conversation ${conversationId}`),
@@ -57,10 +64,27 @@ export async function saveDebriefToNotion(opts: {
     ...d.drillNext.map(li),
   ];
 
+  const properties: Record<string, unknown> = {
+    Session: { title: rt(`${company} · ${s.round.split(",")[0]} · ${date}`) },
+    Date: { date: { start: now.toISOString() } },
+    Round: text(s.round),
+    Interviewers: text(s.interviewers.map((i) => `${i.name} (${i.title})`).join(", ")),
+    Difficulty: { select: { name: s.difficulty } },
+    Score: { number: d.score },
+    Verdict: { select: { name: d.verdict } },
+    "Fact Flags": { number: d.factFlags.length },
+    "Top Fix": text(d.fixes[0] ? `${d.fixes[0].moment}: ${d.fixes[0].issue}` : ""),
+    "Drill Next": text(d.drillNext.join("; ")),
+    Scenario: text(s.title),
+    "Conversation ID": text(conversationId),
+  };
+  if (durationSecs) properties.Minutes = { number: Math.round(durationSecs / 6) / 10 };
+  if (s.notionRolePageId) properties.Role = { relation: [{ id: s.notionRolePageId }] };
+
   const page = await notion("/pages", "POST", {
-    parent: { page_id: s.notionParentPageId },
+    parent: { database_id: dbId },
     icon: { type: "emoji", emoji: "🎙️" },
-    properties: { title: { title: rt(`Mock interview debrief: ${s.title.split(":")[0]} · ${date} · ${d.score}/10`) } },
+    properties,
     children: blocks.slice(0, 100),
   });
 

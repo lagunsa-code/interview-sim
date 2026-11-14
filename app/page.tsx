@@ -409,8 +409,8 @@ export default function Page() {
             <textarea value={listToText(draft.candidateGoals)} onChange={(e) => update("candidateGoals", textToList(e.target.value))} />
             <label>Facts and wording rules to check (one per line)</label>
             <textarea style={{ minHeight: 120 }} value={listToText(draft.factsToCheck)} onChange={(e) => update("factsToCheck", textToList(e.target.value))} />
-            <label>Notion page ID for the debrief (optional)</label>
-            <input value={draft.notionParentPageId || ""} onChange={(e) => update("notionParentPageId", e.target.value)} />
+            <label>Job Search Tracker row ID (links the Mock Interviews entry to the role)</label>
+            <input value={draft.notionRolePageId || ""} onChange={(e) => update("notionRolePageId", e.target.value)} />
           </div>
         </>
       )}

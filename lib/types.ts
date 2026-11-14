@@ -33,6 +33,6 @@ export type Scenario = {
   rubric: string[]; // what a strong performance looks like in this round
   factsToCheck: string[]; // the candidate's approved facts and wording rules
   candidateGoals: string[]; // what the candidate wants to land or ask in this call
-  notionParentPageId?: string; // debrief is saved as a child page here
+  notionRolePageId?: string; // Job Search Tracker row; the Mock Interviews row links to it
   llm?: string; // ElevenLabs agent LLM override
 };

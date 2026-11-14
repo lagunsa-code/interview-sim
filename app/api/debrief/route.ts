@@ -31,7 +31,7 @@ export async function POST(req: Request) {
     let notionUrl: string | null = null;
     let notionError: string | null = null;
     try {
-      notionUrl = await saveDebriefToNotion({ scenario, debrief, transcriptLines: lines, conversationId });
+      notionUrl = await saveDebriefToNotion({ scenario, debrief, transcriptLines: lines, conversationId, durationSecs: conv.durationSecs });
     } catch (e) {
       notionError = (e as Error).message;
     }

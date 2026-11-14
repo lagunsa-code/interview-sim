@@ -6,7 +6,7 @@ Voice mock interviews on ElevenLabs Agents. Each scenario sets the company conte
 - One ElevenLabs agent named "Interview Simulator", created automatically on first use.
 - Before each call, the app rewrites that agent for the chosen scenario: system prompt, opening line, lead voice, and one extra voice per additional interviewer (ElevenLabs multi-voice, up to 10 voices total).
 - The browser talks to the agent over WebSocket with a signed URL. Your API key never leaves the server.
-- When the call ends, the app pulls the transcript from ElevenLabs, grades it with Claude through Vercel AI Gateway, and saves a debrief page under the scenario's Notion page.
+- When the call ends, the app pulls the transcript from ElevenLabs, grades it with Claude through Vercel AI Gateway, and saves a row to the Mock Interviews database under Job Search HQ in Notion, linked to the role's Job Search Tracker row (set `notionRolePageId` in the scenario).
 
 ## Access
 Protected by Vercel Authentication: only people signed in to your Vercel account can open it. Keep Deployment Protection on, since every call spends ElevenLabs credits.
@@ -15,7 +15,8 @@ Protected by Vercel Authentication: only people signed in to your Vercel account
 | Key | Required | What |
 | --- | --- | --- |
 | `ELEVENLABS_API_KEY` | yes | Needs ElevenLabs Agents read/write and Voices read permissions |
-| `NOTION_TOKEN` | for Notion debriefs | Internal integration secret; share the Job Search Tracker with the integration |
+| `NOTION_TOKEN` | for Notion debriefs | Internal integration secret; connect the integration to Job Search HQ (which holds Mock Interviews) and to Job Search Tracker |
+| `NOTION_MOCK_INTERVIEWS_DB_ID` | no | Override the Mock Interviews database ID |
 | `ELEVENLABS_AGENT_ID` | no | Use an existing agent instead of auto-creating one |
 | `DEBRIEF_MODEL` | no | AI Gateway model for scoring; default `anthropic/claude-opus-4.6` |
 
